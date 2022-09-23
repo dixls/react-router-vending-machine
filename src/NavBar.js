@@ -5,7 +5,7 @@ import "./NavBar.css";
 function NavBar () {
     return (
         <nav className="NavBar">
-            <NavLink exact to="/">
+            <NavLink end to="/">
                 Home
             </NavLink>
             <NavLink exact to="/snickers">
