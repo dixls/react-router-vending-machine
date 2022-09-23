@@ -1,28 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import {BrowserRouter, Route} from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import VendingMachine from './VendingMachine';
 import Snickers from './Snickers';
 import Twinkie from './Twinkie';
 import Chips from './Chips';
+import NavBar from './NavBar';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Route exact path="/">
-          <VendingMachine />
-        </Route>
-        <Route exact path="/snickers">
-          <Snickers />
-        </Route>
-        <Route exact path="/twinkie">
-          <Twinkie />
-        </Route>
-        <Route exact path="/chips">
-          <Chips />
-        </Route>
+      <NavBar />
+        <Routes>
+          <Route exact path="/" element={<VendingMachine />} />
+          <Route exact path="/snickers" element={<Snickers />} />
+          <Route exact path="/twinkie" element={<Twinkie />} />
+          <Route exact path="/chips" element={<Chips />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );

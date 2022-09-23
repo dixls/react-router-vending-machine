@@ -1,9 +1,11 @@
 .NavBar {
     background-color: slategray;
+    padding: 1rem;
 }
 
 .NavBar a {
     color:aliceblue;
+    padding: .25rem;
 }
 
 .NavBar a.active {
