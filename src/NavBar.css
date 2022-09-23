@@ -1,0 +1,11 @@
+.NavBar {
+    background-color: slategray;
+}
+
+.NavBar a {
+    color:aliceblue;
+}
+
+.NavBar a.active {
+    color: black;
+}
